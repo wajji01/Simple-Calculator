@@ -1,6 +1,6 @@
 {
   "name": "wajji03-calculator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simpal calculator using typescript and node js",
   "main": "index.js",
   "type": "module",
