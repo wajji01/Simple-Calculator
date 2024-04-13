@@ -41,7 +41,7 @@ while (condition) {
             type: "confirm",
             message: "Do you want do more ?",
             default: "false",
-        }
+        },
     ]);
     condition = cond.more;
 }

@@ -6,7 +6,6 @@ console.log("===============================");
 console.log("      Wajahat Calculator       ");
 console.log("===============================");
 while (condition) {
-
   const answer = await inquirer.prompt([
     { message: "Enter your first number", type: "number", name: "firstnum" },
     { message: "Enter your second number", type: "number", name: "secondnum" },
@@ -16,7 +15,6 @@ while (condition) {
       name: "operator",
       choices: ["Addition", "Subtraction", "Multiplication", "Division"],
     },
-   
   ]);
   // conditional statment
   if (answer.operator === "Addition") {
@@ -42,20 +40,18 @@ while (condition) {
   } else {
     console.log("Please select a valid operator");
   }
-  
-  let cond = await inquirer.prompt(
-      [
-          {
-              name: "more",
-              type: "confirm",
-              message: "Do you want do more ?",
-              default: "false",
-            }
-        ]
-        )
-        condition = cond.more;
-    }
-    
-    console.log("===============================");
-    console.log("      Thanks For Comming       ");
-    console.log("===============================");
+
+  let cond = await inquirer.prompt([
+    {
+      name: "more",
+      type: "confirm",
+      message: "Do you want do more ?",
+      default: "false",
+    },
+  ]);
+  condition = cond.more;
+}
+
+console.log("===============================");
+console.log("      Thanks For Comming       ");
+console.log("===============================");
